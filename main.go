@@ -1,10 +1,11 @@
 package main
 
 import (
-	"acdemo/ashttp"
 	"encoding/json"
 	"fmt"
 	"log"
+
+	"github.com/dean2021/activesync/ashttp"
 )
 
 func main() {
@@ -12,7 +13,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
 	b, err := json.MarshalIndent(query, "", "  ")
 	if err != nil {
 		log.Fatal(err)
